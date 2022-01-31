@@ -2,11 +2,12 @@ import "./App.css";
 
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import { firebaseApp } from "./Firebase/firebase";
 
 import Form from "./components/Common/Form";
 
 function App() {
-  //state
+  //form states
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
